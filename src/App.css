@@ -1,11 +1,22 @@
 /* GENERAL */
-.menuStyle a {text-decoration: none; color:#efefef}
-.menuStyle a:hover {text-decoration: none; color:#dfdfdf}
+    /* Mediaqueries */
+        /* Max 900px*/
+           @media (max-width:900px) { 
+             .hide-mob {display:none!important}
+           }
+        /* Min 900px*/
+           @media (min-width:900px) { 
+            .hide-desk {display:none!important}
+          }
 
-#root {max-width: 1500px; width:100%; margin: 0 auto;}
+#root {width:100%; margin: 0 auto;}
 
 /* HEADER */
-header {margin-top: 10px;}
+header { height:50px; background-color: #333333}
+.navStyle{padding-top: 10px; max-width: 1500px;display:block;}
+
+.menuStyle a {text-decoration: none; color:#efefef}
+.menuStyle a:hover {text-decoration: underline; color:#dfdfdf}
 .menuStyle {
 width:20%;
 display:flex;
@@ -14,3 +25,4 @@ float:right;
 justify-content:space-around;
 margin-right:5%;
 }
+.menuFooter { position:fixed; bottom:0px; width:100%!important; background-color: #333333; padding-top: 10px; padding-bottom: 10px;}
