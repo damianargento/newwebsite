@@ -14,7 +14,7 @@ const alturas = alturasArray.map((altura,i) => <p key={i}>{altura}</p>);
 
 const Street = ({name,alturas}) => {return (<div><h1>{name}</h1><div style={liStyle}>{alturas}</div></div>)};
 
-const App = () => (
+const App = () => ( 
 	<div style={divStyle}>
 	<Street name="Congreso" alturas={alturas} />
 	<Street name="Arribe&ntilde;os" alturas={alturas} />
