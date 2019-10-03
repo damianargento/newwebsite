@@ -22,8 +22,6 @@ let menuItems = [
 
 const headerStyle = { };
 
-const navStyle = { };
-
 const Menu = () => ( 
 		menuItems.map(
 				(item,i) => {return (
