@@ -11,15 +11,6 @@ class Menu extends React.Component {
 			{title:"Home", 
 			url:"#home", 
 			icon:<FaHome/> },
-
-			{title:"Work", 
-			url:"#work",
-			icon:<FaPencilAlt/>}, 
-
-			{title:"Articles",
-			url:"#articles",
-			icon:<FaFile />
-			}
 		] }
 	}
 	render() {
@@ -47,8 +38,6 @@ const MobileMenu = () => (
 	const API = "http://api.weatherstack.com/current?access_key=e85eaaed9d20b339b2db9017665a8ff9&query="
 
 class TimeApp extends React.Component {
-
-	
 
 	constructor(props) {
 		super(props);
@@ -80,7 +69,7 @@ handleChange = event => {
 		return (
 				isLoading ? <div>Cargando...</div> : 
 				<div>
-					<h1>{this.state.userQuery}</h1>
+					
 				<div><img src={current.weather_icons} alt=""/></div>
 				<div>{ubicacion.name}</div>
 				<div>{current.temperature} °C</div>
@@ -99,7 +88,7 @@ const App = () => (
 			</div>
 		</nav>
 	</header>
-	<section className="Hero">
+	<section className="App">
 		<TimeApp/>
 	</section>
 	<MobileMenu />
